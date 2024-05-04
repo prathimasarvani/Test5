@@ -5,24 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        
         .btn-warning {
             background-color: #FFCC00; /* Yellow button for 'About Cal State LA' */
             border: none;
-            margin-top: 40px; /* Increased spacing between sections */
-            margin-bottom: 40px; /* Consistent spacing at bottom */
+            margin-top: 40px;
+            margin-bottom: 40px; 
         }
         .footer-icon {
-            width: 30px; /* Icon size in the footer */
+            width: 30px; 
         }
         .links a {
-            margin-right: 10px; /* Space between top links */
+            margin-right: 10px; 
             color: black;
             text-decoration: none;
         }
         .my-button {
             padding: 5px 10px;
-            background-color:  #FFCC00;;
+            background-color: #FFCC00;
             color: black;
             text-decoration: none;
         }
@@ -31,7 +30,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 10px 0;
-            margin-bottom: 40px; /* Increased bottom margin */
+            margin-bottom: 40px; 
         }
         .left-top, .right-top {
             display: flex;
@@ -41,24 +40,58 @@
             margin-right: 20px;
         }
         .wearelalogo {
-            max-width: 100%; /* Ensure image doesn't exceed container width */
-            height: auto; /* Maintain aspect ratio */
+            max-width: 100%; 
+            height: auto; 
             margin-bottom: 40px; 
         }
         .text-center {
-        margin-top: 40px; /* Increased spacing between sections */
-        margin-bottom: 40px; /* Consistent spacing at bottom */
-    }
-    .row {
-        margin-top: 40px; /* Increased spacing between sections */
-        margin-bottom: 40px; /* Consistent spacing at bottom */
-    }
+            margin-top: 40px; 
+            margin-bottom: 40px; 
+        }
+        .row {
+            margin-top: 40px; 
+            margin-bottom: 40px;
+        }
+        .uninewsimage {
+            width: 100%; /* This will make the image full width of the column */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .navbar-custom {
+            background-color: white; /* Adjust to match your header's background */
+            color: black;
+        }
+        .navbar-custom .navbar-brand {
+            color: black;
+        }
+        .navbar-custom .nav-link {
+            color: black; /* Text color */
+            margin-right: 20px;
+        }
+        .navbar-custom .btn-give-now {
+            background-color: #FFCC00;
+            border: none;
+            color: black;
+        }
+        .navbar-toggler {
+            border: none;
+            outline: none;
+        }
+        .navbar-toggler-icon {
+            background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox=\'0 0 30 30\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath stroke=\'rgba(0, 0, 0, 0.5)\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-miterlimit=\'10\' d=\'M4 7h22M4 15h22M4 23h22\'/%3E%3C/svg%3E');
+        }
+        .search-icon {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
     </style>
     <title>Cal State LA</title>
 </head>
 <body>
     <div class="container">
-         <div class="header">
+         <!-- <div class="header">
             <div class="left-top">
                 <img src="images/calstatelatoplogo.PNG" alt="Cal State LA Logo" class="img-fluid toplogo">
                 <div class="links">
@@ -78,22 +111,44 @@
                     <a href="https://www.calstatela.edu/givenow" class="my-button" target="_blank">Give Now</a>
                 </div>
             </div>
-        </div> 
-        
+        </div>   -->
+
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://www.calstatela.edu/">CAL STATE LA</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link" href="https://www.calstatela.edu/students">Students</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.calstatela.edu/faculty-staff">Faculty & Staff</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.calstatela.edu/alumni">Alumni</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://csula.sharepoint.com/sites/MyCalStateLA/s">MyCalStateLA</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://directory.calstatela.edu/">Directory</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.calstatela.edu/library">Library</a></li>
+                    </ul>
+                    <form class="form-inline">
+                        <button class="search-icon"><i class="fa fa-search"></i></button>
+                        <a href="https://www.calstatela.edu/givenow" class="btn btn-give-now ml-2">Give Now</a>
+                    </form>
+                </div>
+            </div>
+        </nav>
         
         <div>
             <img src="images/Wearela.jpeg" alt="wearelalogo" class="wearelalogo"> 
         </div>
         <main>
             <section class="text-center mb-3">
-                <h1 style = "margin:50px;">A NEW GOLDEN EAGLE</h1>
+                <h1 style="margin:50px;">A NEW GOLDEN EAGLE</h1>
                 <p>Cal State LA welcomes President Berenecea Johnson Eanes to the Golden Eagle family. President Eanes is the first woman to lead our University. With the start of her tenure as the ninth president, Cal State LA enters a new era.</p>
                 <p>Visit the 100 Days website to join the president as she becomes acquainted with the Cal State LA community.</p>
                 <a href="https://www.calstatela.edu/about" target="_blank" class="btn btn-warning">About Cal State LA</a>
             </section>
             <section class="row mb-3">
                 <div class="col-md-6">
-                    <img src="images/uninewsimage.png" alt="University News Image" class="img-fluid mb-2">
+                    <img src="images/uninewsimage.png" alt="University News Image" class="img-fluid uninewsimage mb-2">
                 </div>
                 <div class="col-md-6">
                     <h2>UNIVERSITY NEWS</h2>
@@ -101,7 +156,46 @@
                     <p>Luckman Fine Arts Complex launched its 30th anniversary season with the legendary Chaka Khan and filled the theatre with fans enjoying hits from her fifty-year career.</p>
                 </div>
             </section>
-            <!-- More sections for lists etc. can be added here -->
+            <section class="row mb-3">
+                <div class="col-md-4">
+                    <img src="images/wearelacampaign.PNG" alt="We Are LA Campaign" class="img-fluid">
+                </div>
+                <div class="col-md-2">
+                    <h3>CONNECT</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.calstatela.edu/contact-us" target="_blank" style="color: black;">Contact Us</a></li>
+                        <li><a href="https://news.calstatela.edu/" target="_blank" style="color: black;">Media</a></li>
+                        <li><a href="https://www.calstatela.edu/univ/ppa/publicat/social-media-directory" target="_blank" style="color: black;">Social Media Hub</a></li>
+                        <li><a href="https://www.calstatela.edu/advancement/ways-give" target="_blank" style="color: black;">Ways to Give</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h3>SERVICES</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.calstatela.edu/contact-us" target="_blank" style="color: black;">Campus Map</a></li>
+                        <li><a href="https://news.calstatela.edu/" target="_blank" style="color: black;">Campus Safety</a></li>
+                        <li><a href="https://www.calstatela.edu/univ/ppa/publicat/social-media-directory" target="_blank" style="color: black;">CARE Team</a></li>
+                        <li><a href="https://www.calstatela.edu/advancement/ways-give" target="_blank" style="color: black;">Dining on Campus</a></li>
+                        <li><a href="https://www.calstatela.edu/WellBeingU" target="_blank" style="color: black;">WellBeingU</a></li>
+                        <li><a href="https://www.calstatela.edu/parking" target="_blank" style="color: black;">Parking & Transportation</a></li>
+                        <li><a href="https://www.calstatela.edu/studenthealthcenter" target="_blank" style="color: black;">Student Health Center</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>ADMINISTRATIVE</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.calstatela.edu/accessibility/accessibility-statement" target="_blank" style="color: black;">Accessibility</a></li>
+                        <li><a href="https://www.calstatela.edu/wscuc" target="_blank" style="color: black;">Accreditation</a></li>
+                        <li><a href="https://www.calstatela.edu/sites/default/files/2023%20Annual%20Security%20Report_2.pdf" target="_blank" style="color: black;">Annual Security Report</a></li>
+                        <li><a href="https://www.calstatela.edu/sites/default/files/2024%20Campus%20Safety%20Plan.pdf" target="_blank" style="color: black;">Campus Safety Plan</a></li>
+                        <li><a href="https://www.calstate.edu/" target="_blank" style="color: black;">CSU System</a></li>
+                        <li><a href="https://www.calstatela.edu/plugins" target="_blank" style="color: black;">File Viewers</a></li>
+                        <li><a href="https://www.calstatela.edu/privacy" target="_blank" style="color: black;">Privacy</a></li>
+                        <li><a href="https://www.calstatela.edu/hrm/oedi-title-ix" target="_blank" style="color: black;">Title IX</a></li>
+                    </ul>
+                </div>
+            </section>
         </main>
         <footer class="footer bg-light mt-3">
             <div class="container">
@@ -117,7 +211,7 @@
                             <img src="images/twitter_icon.png" alt="Twitter" class="footer-icon mx-2">
                         </a>
                         <a href="https://www.linkedin.com/school/california-state-university-los-angeles" target="_blank">
-                            <img src="images/linkedin_icon.png" alt="LinkedIn" class="footer-icon mx-2">
+                            <img src="images/linkedin_icon.png" alt="LinkedIn" the="footer-icon mx-2">
                         </a>
                         <a href="https://www.youtube.com/user/csulosangeles" target="_blank">
                             <img src="images/youtube_icon.png" alt="YouTube" class="footer-icon mx-2">
